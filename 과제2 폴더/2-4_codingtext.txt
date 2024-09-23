@@ -1,0 +1,20 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(int a, int b) {
+    int answer = 0;
+    int a_10, b_10;
+
+    for(int i = 1 ; i < 10000; i = i * 10) {
+        int tmpA = a / i, tmpB = b / i;
+        if((tmpA > 0) & (tmpA < 10)) {a_10 = i;}
+        if((tmpB > 0) & (tmpB < 10)) {b_10 = i;}
+    }
+
+    int AB = a * b_10 * 10 + b, BA = b * a_10 * 10 + a;
+
+    answer = (AB >= BA) ? AB : BA;
+    return answer;
+}

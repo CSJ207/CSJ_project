@@ -1,0 +1,18 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+vector<int> solution(vector<int> arr, vector<int> query) {
+    vector<int> answer;
+    int qsz = query.size();
+    answer.reserve(arr.size());
+    copy(arr.begin(), arr.end(), back_inserter(answer));
+
+    for(int i = 0; i < qsz; i++) {
+        int t = query[i];
+        (i % 2 == 0) ? answer.erase(answer.begin()+t+1, answer.end()) : answer.erase(answer.begin(), answer.begin()+t);
+
+    }
+    return answer;
+}
