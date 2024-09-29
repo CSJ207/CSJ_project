@@ -1,0 +1,14 @@
+﻿  MFCTest.cpp
+  MFCTestDlg.cpp
+  코드를 생성하고 있습니다...
+C:\Users\fumika\source\repos\MFCTest\MFCTest\MFCTestDlg.cpp(70,2): error C2039: 'OnBnClickedButton2': 'CMFCTestDlg'의 멤버가 아닙니다.
+  (소스 파일 '/MFCTestDlg.cpp'을(를) 컴파일하는 중)
+      C:\Users\fumika\source\repos\MFCTest\MFCTest\MFCTestDlg.h(9,7):
+      'CMFCTestDlg' 선언을 참조하십시오.
+  
+C:\Users\fumika\source\repos\MFCTest\MFCTest\MFCTestDlg.cpp(70,2): error C2065: 'OnBnClickedButton2': 선언되지 않은 식별자입니다.
+  (소스 파일 '/MFCTestDlg.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\fumika\source\repos\MFCTest\MFCTest\MFCTestDlg.cpp(66,1): error C2737: '_messageEntries': const 개체를 초기화해야 합니다
+  (소스 파일 '/MFCTestDlg.cpp'을(를) 컴파일하는 중)
+  
